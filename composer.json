@@ -1,0 +1,20 @@
+{
+	"name": "adamcmoore/rocketstation-connect",
+    "description": "Package to access the SMC RocketStation API",
+    "homepage": "https://smccoachhire.com",
+    "authors": [
+        {
+            "name": "Adam Moore",
+            "email": "adam@acmoore.co.uk"
+        }
+    ],
+	"require": {
+		"php": ">=5.3.0",
+		"guzzlehttp/guzzle": "6.0.*@dev",
+	},
+	"autoload": {
+		"psr-4": {
+			"RocketStation\\": "src"
+		}
+	}
+}
