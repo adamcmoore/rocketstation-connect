@@ -130,7 +130,11 @@ class RocketStation
 		if ($response instanceof ResponseInterface && $response->getStatusCode() === 200) {
 			$response = $this->_parseResponse($response);
 		} else {
-			throw new BadResponseException('A bad response was received.', $request);
+			throw new BadResponseException(sprintf(
+				'A bad response was received. HTTP Status code %s - %s', 
+				$response->getStatusCode(),
+				$response->getBody()->getContents()
+			), $request);
 		}
 
 		return $response;
