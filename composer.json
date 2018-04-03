@@ -1,5 +1,5 @@
 {
-	"name": "adamcmoore/rocketstation-connect",
+	"name": "smc/rocketstation-connect",
     "description": "Package to access the SMC RocketStation API",
     "homepage": "https://smccoachhire.com",
     "authors": [
